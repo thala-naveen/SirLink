@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>
+            mark 5
+        </title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script src="index.js">
+        </script>
+    </head>
+    <body>
+        <center>
+            <form action="">
+                <hr>
+            <h5>Welcome B Waalo</h5>
+            <hr>
+            <div class="container">
+        <br>
+               
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="days"><b>Select Day</b></label>    
+                        <select class="form-control" name="day" id="days" required>
+                    <option>--Select day--</option>    
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    </select >
+                    </div>
+                </div>    
+                
+                <BR>
+                    <div class="form-group col-md-4">
+                        <label for="times"><b>Select Timing</b></label></label>
+                    <select class="form-control" name="time" id="times" required>
+                        <option>--Select Time--</option>
+                        <option>10:00 a.m. to 11:00 a.m.</option>
+                        <option>11:00 a.m. to 12:00 a.m.</option>
+                        <option>12:00 p.m. to 1:00 p.m.</option>
+                        <option>02:00 p.m. to 03:00 p.m.</option>
+                        <option>03:00 p.m. to 04:00 p.m.</option>
+                        <option>04:00 p.m. to 06:00 p.m.</option>
+                    </select>
+                </div>
+                
+               
+                <br>
+               
+                    <div class="form-group col-md-4">
+                        <label for="batch"><b>Select Batch</b></label>
+                   <select class="form-control" name="" id="batch" required>
+                        <option>--Select Batch--</option>
+                        <option>B1</option>
+                        <option>B2</option>
+                    </select>
+                </div>
+               <br>
+                    <input type="button" class="btn btn-primary" value="Submit" name="" id="b1" onclick="call()">
+                    <input type="reset" class="btn btn-info" name="" id="">
+            
+            <br>
+        
+        </form>
+
+        <hr>
+        <br>
+        <table border="1" cellpadding="10" class="table col-md-6">
+            <tr>
+                <thead class="thead-dark"><th>Class Name/Code</th></thead>
+                <td><div id="className"></div></td>
+            </tr>
+            <tr>
+                <thead class="thead-dark"><th>Faculty Name</th></thead>
+                <td><div id="Facultyname"></div></td>
+            </tr>
+            <tr>
+                <thead class="thead-dark"><th>Meeting Link</th></thead>
+                <td><a id="MeetingLink"></a></td>
+            </tr>
+        </table>
+
+        <br><br>
+        <font color="red"><b>The above meeting links are according to the moodle,</b></font>
+        <br>
+        <h4>Some links are different every time.</h4>
+
+    </div>
+    </center>
+    </body>
+</html>
